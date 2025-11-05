@@ -7,11 +7,11 @@ import { User } from '@supabase/supabase-js';
 // --- Define Types ---
 type Trial = {
   id: number;
-  title: str;
-  status: str;
-  phase: str;
-  location: str;
-  ai_summary: str;
+  title: string;
+  status: string;
+  phase: string;
+  location: string;
+  ai_summary: string;
 };
 
 // --- Main Page Component ---
