@@ -17,10 +17,7 @@ supabase: Client = create_client(supabase_url, supabase_key)
 app = FastAPI(title="CuraLink API")
 
 # --- CORS Middleware ---
-origins = [
-    "http://localhost:3000",
-    "http://localhost",
-]
+origins = ["*"] # Allow all
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
